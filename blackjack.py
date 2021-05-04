@@ -58,6 +58,9 @@ def play_round(player_tokens):
     # Deal two cards to the dealer
     dealer_hand.append(deck.pop())
     dealer_hand.append(deck.pop())
+
+    # Show one of the dealer's cards to the player
+    print(f'Dealer has {dealer_hand[0][0]} of {dealer_hand[0][1]}.')
     
     # Set the playing flag
     playing = True
